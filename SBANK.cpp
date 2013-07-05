@@ -22,12 +22,7 @@ int main(){
         for(int j=0;j<n;j++){
             gets(myString);
             aux=myString;
-            it=myMap.find(aux);
-            if(it==myMap.end()){
-                myMap[aux]=1;
-            }else{
-                myMap[aux]++;
-            }
+            myMap[aux]++;
         }
         for(it=myMap.begin();it!=myMap.end();it++) printf("%s %d\n",it->first.c_str(),it->second);
         printf("\n");

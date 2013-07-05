@@ -20,19 +20,9 @@ int main(){
             scanf("%d",&goals1);
             scanf("%d",&goals2);
             if(goals1>goals2){
-                it=myMap.find(team1);
-                if(it==myMap.end()){
-                    myMap[team1]=0;
-                }else{
-                    myMap[team1]++;
-                }
+                myMap[team1]++;
             }else{
-                it=myMap.find(team2);
-                if(it==myMap.end()){
-                    myMap[team2]=0;
-                }else{
-                    myMap[team2]++;
-                }
+                myMap[team2]++;
             }
         }
         for (it=myMap.begin(); it!=myMap.end(); ++it){
