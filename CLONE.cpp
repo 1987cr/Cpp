@@ -22,12 +22,7 @@ int main(){
         if(n==0 && m==0) break;
         for(int j=0;j<n;j++){
             cin>>DNA;
-            it=myMap.find(DNA);
-            if(it==myMap.end()){
-                myMap[DNA]=1;
-            }else{
-                myMap[DNA]++;
-            }
+            myMap[DNA]++;
         }
         for (it=myMap.begin(); it!=myMap.end(); ++it) myVector[it->second]++;
         for (int j=1;j<=n;j++){
