@@ -1,7 +1,6 @@
 /*  http://www.spoj.com/problems/RPLL/  */
 
 #include<stdio.h>
-#include<iostream>
 #include<string>
 #include<math.h>
 
